@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Jumbotron, Row } from 'react-bootstrap';
 import CardCarousel from '../../components/CardCarousel';
 import { CardData } from '../../components/Card';
 
@@ -74,6 +74,17 @@ const cardStack: CardData[] = [
   },
 ];
 
+const series: string[] = ['Wolverine', 'Iron Man', 'Spider Man'];
+
+function shuffleConcatArray(array) {
+  return array.concat(array, array);
+  // for (let i = array.length - 1; i > 0; i--) {
+  //   const j = Math.floor(Math.random() * (i + 1));
+  //   [array[i], array[j]] = [array[j], array[i]];
+  // }
+  // return array;
+}
+
 export function HomePage() {
   return (
     <>
@@ -82,26 +93,43 @@ export function HomePage() {
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
 
-      <Container>
-        <Row>
-          <Col>
-            <CardCarousel title="Iron Man" cards={cardStack} />
-          </Col>
-        </Row>
+      <Container fluid>
         <Row>
           <Col>
             <CardCarousel
-              title="Spider Man"
-              cards={cardStack}
+              title="Uscite della settimana"
+              cards={shuffleConcatArray(cardStack)}
               isThumbs={true}
             />
           </Col>
         </Row>
+      </Container>
+      <br />
+      <Container>
         <Row>
           <Col>
-            <CardCarousel title="tomadar " cards={cardStack} />
+            <Jumbotron>
+              <CardCarousel title="Le mie uscite" cards={cardStack} />
+            </Jumbotron>
           </Col>
         </Row>
+        <h3>Uscite per Serie</h3>
+        <Jumbotron>
+          {series.map(title => (
+            <>
+              <Row>
+                <Col>
+                  <CardCarousel
+                    title={title}
+                    cards={shuffleConcatArray(cardStack)}
+                    isThumbs={true}
+                  />
+                </Col>
+              </Row>
+              <br />
+            </>
+          ))}
+        </Jumbotron>
       </Container>
     </>
   );

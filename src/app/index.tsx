@@ -15,7 +15,6 @@ import { GlobalStyle } from 'styles/global-styles';
 import { HomePage } from './containers/HomePage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
-import { Container } from 'react-bootstrap';
 import { MyNavBar } from './components/MyNavBar';
 
 export function App() {
@@ -23,27 +22,22 @@ export function App() {
   return (
     <>
       <MyNavBar />
-      <br />
-      <Container>
-        <BrowserRouter>
-          <Helmet
-            titleTemplate="%s - React Boilerplate"
-            defaultTitle="React Boilerplate"
-            htmlAttributes={{ lang: i18n.language }}
-          >
-            <meta
-              name="description"
-              content="A React Boilerplate application"
-            />
-          </Helmet>
+      <br />{' '}
+      <BrowserRouter>
+        <Helmet
+          titleTemplate="%s - React Boilerplate"
+          defaultTitle="React Boilerplate"
+          htmlAttributes={{ lang: i18n.language }}
+        >
+          <meta name="description" content="A React Boilerplate application" />
+        </Helmet>
 
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route component={NotFoundPage} />
-          </Switch>
-          <GlobalStyle />
-        </BrowserRouter>
-      </Container>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route component={NotFoundPage} />
+        </Switch>
+        <GlobalStyle />
+      </BrowserRouter>
     </>
   );
 }

@@ -7,7 +7,10 @@ import styled from 'styled-components';
 const flickityOptions = {
   // initialIndex: 2,
   cellAlign: 'left',
+  freeScroll: true,
   contain: true,
+  pageDots: false,
+  prevNextButtons: false,
 };
 
 interface CardCarouselProps {
@@ -25,21 +28,21 @@ export const CardCarousel: React.FC<CardCarouselProps> = ({
 }) => {
   return (
     <FlickityStyle>
-      <Jumbotron>
-        <h3>{title}</h3>
-        <Flickity
-          // className={'carousel'} // default ''
-          // elementType={'MyCard'} // default 'div'
-          options={flickityOptions} // takes flickity options {}
-          // disableImagesLoaded={false} // default false
-          reloadOnUpdate={!isStatic}
-          static={isStatic} // default false
-        >
-          {cards.map(card => (
-            <MyCard card={card} thumb={isThumbs} />
-          ))}
-        </Flickity>
-      </Jumbotron>
+      {/*<Jumbotron>*/}
+      <h3>{title}</h3>
+      <Flickity
+        // className={'carousel'} // default ''
+        // elementType={'MyCard'} // default 'div'
+        options={flickityOptions} // takes flickity options {}
+        // disableImagesLoaded={false} // default false
+        reloadOnUpdate={!isStatic}
+        static={isStatic} // default false
+      >
+        {cards.map(card => (
+          <MyCard card={card} thumb={isThumbs} />
+        ))}
+      </Flickity>
+      {/*</Jumbotron>*/}
     </FlickityStyle>
   );
 };
@@ -166,21 +169,6 @@ https://flickity.metafizzy.co
     list-style: none;
     text-align: center;
     line-height: 1;
-  }
-
-  .flickity-page-dots .dot {
-    display: inline-block;
-    width: 40px;
-    height: 4px;
-    margin: 0;
-    background: #333;
-    border-radius: 0;
-    opacity: 0.25;
-    cursor: pointer;
-  }
-
-  .flickity-page-dots .dot.is-selected {
-    opacity: 1;
   }
 
   .flickity-viewport {

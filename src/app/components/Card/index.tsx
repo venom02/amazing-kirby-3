@@ -23,16 +23,20 @@ export const MyCard: React.FC<CardProps> = ({ card, thumb = false }) => {
   return (
     <Card
       style={{
-        width: thumb ? '6rem' : '12rem',
+        // padding: '5px',
         WebkitBoxShadow: shadow,
         MozBoxShadow: shadow,
         boxShadow: shadow,
-        margin: thumb ? '2px' : '5px',
-        borderRadius: thumb ? '3px' : '7px',
+        margin: '0 auto',
+        borderRadius: thumb ? '6px' : '10px',
         overflow: 'hidden',
       }}
     >
       <Card.Img
+        style={{
+          height: thumb ? '200px' : '450px',
+          width: 'auto',
+        }}
         variant="top"
         src={thumb && card.thumb ? card.thumb : card.img}
       />
