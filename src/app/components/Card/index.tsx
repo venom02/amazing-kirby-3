@@ -1,6 +1,9 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import Flippy, { BackSide, FrontSide } from 'react-flippy';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faThumbtack } from '@fortawesome/free-solid-svg-icons';
 
 export type CardData = {
   title?: string;
@@ -17,22 +20,32 @@ type CardProps = {
 
 export const MyCard: React.FC<CardProps> = ({ card, thumb = false }) => {
   const myFigure = (
-    <img
-      style={{
-        height: thumb ? '200px' : '450px',
-        width: 'auto',
-        // borderRadius: thumb ? '5px' : '10px',
-        // overflow: 'hidden',
-      }}
-      src={thumb && card.thumb ? card.thumb : card.img}
-      alt="Tea cup with steam and pen on bed"
-    />
+    <MyStyle card={card} thumb={thumb}>
+      <div className="item">
+        <span className="pin-badge">
+          <FontAwesomeIcon icon={faThumbtack} />
+        </span>
+        <span className="got-badge">
+          <FontAwesomeIcon icon={faCheck} />
+        </span>
+        <img
+          style={{
+            height: thumb ? '200px' : '450px',
+            width: 'auto',
+            // borderRadius: thumb ? '5px' : '10px',
+            // overflow: 'hidden',
+          }}
+          src={thumb && card.thumb ? card.thumb : card.img}
+          alt="Tea cup with steam and pen on bed"
+        />
+      </div>
+    </MyStyle>
   );
 
   const cardBackBody = (
     <Card.Body>
       <Card.Title>
-        {thumb ? <h6>{card.title}</h6> : <h3>{card.title}</h3>}
+        {thumb ? <h6>{card.title}</h6> : <h3>{card.title} </h3>}
       </Card.Title>
       <Card.Subtitle className="mb-2 text-muted">{card.date}</Card.Subtitle>
       {thumb ? (
@@ -78,6 +91,7 @@ export const MyCard: React.FC<CardProps> = ({ card, thumb = false }) => {
       >
         {myFigure}
       </FrontSide>
+
       <BackSide
         style={{
           padding: '0em',
@@ -90,5 +104,37 @@ export const MyCard: React.FC<CardProps> = ({ card, thumb = false }) => {
     </Flippy>
   );
 };
+
+const MyStyle = styled.div<CardProps>`
+  .item {
+    position: relative;
+    //padding-top: 20px;
+    display: inline-block;
+  }
+
+  .pin-badge {
+    position: absolute;
+    right: ${({ thumb }) => (thumb ? '5px' : '10px')};
+    bottom: ${({ thumb }) => (thumb ? '5px' : '10px')};
+    background: #ffc107 !important;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color: #232323;
+    padding: 5px 10px;
+    font-size: ${({ thumb }) => (thumb ? '10px' : '15px')};
+  }
+
+  .got-badge {
+    position: absolute;
+    right: ${({ thumb }) => (thumb ? '35px' : '45px')};
+    bottom: ${({ thumb }) => (thumb ? '5px' : '10px')};
+    background: #28a745 !important;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: ${({ thumb }) => (thumb ? '10px' : '15px')};
+  }
+`;
 
 export default MyCard;
