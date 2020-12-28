@@ -1,0 +1,465 @@
+{
+  "issues": [
+    {
+      "title": "Iron Man 1",
+      "date": "31/12/2020",
+      "price": "23€",
+      "serie_id": 27,
+      "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/m/i/mirna089_0_mefx4jiost3we1wb.jpg",
+      "img": "https://www.panini.it/media/catalog/product/cache/a5b5dd3adfe0d321084804c738f29601/m/i/mirna089_0_mefx4jiost3we1wb.jpg"
+    },
+    {
+      "title": "Iron Man 2",
+      "date": "31/12/2020",
+      "price": "23€",
+      "serie_id": 27,
+      "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/m/i/mirna050isbn_0_839fo0rn6pvoq5dc.jpg",
+      "img": "https://www.panini.it/media/catalog/product/cache/a5b5dd3adfe0d321084804c738f29601/m/i/mirna050isbn_0_839fo0rn6pvoq5dc.jpg"
+    },
+    {
+      "title": "Iron Man 3",
+      "date": "31/12/2020",
+      "price": "23€",
+      "serie_id": 27,
+      "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/m/i/mirna058_0_m2ekijdoqv9xs29c.jpg",
+      "img": "https://www.panini.it/media/catalog/product/cache/a5b5dd3adfe0d321084804c738f29601/m/i/mirna058_0_m2ekijdoqv9xs29c.jpg"
+    },
+    {
+      "title": "Iron Man 4",
+      "date": "31/12/2020",
+      "price": "23€",
+      "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/m/i/minxm024_0_bpqtyznfuvjw7ykj.jpg",
+      "img": "https://www.panini.it/media/catalog/product/cache/a5b5dd3adfe0d321084804c738f29601/m/i/minxm024_0_bpqtyznfuvjw7ykj.jpg"
+    },
+    {
+      "title": "Iron Man 5",
+      "date": "31/12/2020",
+      "price": "23€",
+      "serie_id": 27,
+      "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/m/i/mirna050isbn_0_839fo0rn6pvoq5dc.jpg",
+      "img": "https://www.panini.it/media/catalog/product/cache/a5b5dd3adfe0d321084804c738f29601/m/i/mirna050isbn_0_839fo0rn6pvoq5dc.jpg"
+    },
+    {
+      "title": "Iron Man 6",
+      "date": "31/12/2020",
+      "serie_id": 27,
+      "price": "23€",
+      "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/m/i/mirna058_0_m2ekijdoqv9xs29c.jpg",
+      "img": "https://www.panini.it/media/catalog/product/cache/a5b5dd3adfe0d321084804c738f29601/m/i/mirna058_0_m2ekijdoqv9xs29c.jpg"
+    },
+    {
+      "title": "Iron Man 7",
+      "date": "31/12/2020",
+      "price": "23€",
+      "serie_id": 27,
+      "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/m/i/minxm024_0_bpqtyznfuvjw7ykj.jpg",
+      "img": "https://www.panini.it/media/catalog/product/cache/a5b5dd3adfe0d321084804c738f29601/m/i/minxm024_0_bpqtyznfuvjw7ykj.jpg"
+    },
+    {
+      "serie_id": 27,
+      "img": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/m/m/mmmin200isbnb_0_wm3yqw1lyhd1uarx.jpg"
+    }
+  ],
+  "series": [
+    {
+      "created": "2019-01-18T01:43:49.011448",
+      "id": "1",
+      "key": "ag5lfmFtYXppbmdraXJiaXIWCxIFU2VyaWUiCzEwMCUgTWFydmVsDA",
+      "modified": "2019-01-18T01:43:49.011455",
+      "title": "100% Marvel",
+      "version": 1547775711
+    },
+    {
+      "created": "2019-01-05T00:49:43.134371",
+      "id": "2",
+      "key": "ag5lfmFtYXppbmdraXJiaXIbCxIFU2VyaWUiEDEwMCUgTWFydmVsIEJlc3QM",
+      "modified": "2019-01-05T00:49:43.134376",
+      "title": "100% Marvel Best",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-18T01:43:44.831421",
+      "id": "3",
+      "key": "ag5lfmFtYXppbmdraXJiaXIaCxIFU2VyaWUiDzEwMCUgTWFydmVsIE1heAw",
+      "modified": "2019-01-18T01:43:44.831427",
+      "title": "100% Marvel Max",
+      "version": 1547775711
+    },
+    {
+      "created": "2019-12-16T04:00:23.659263",
+      "id": "4",
+      "key": "ag5lfmFtYXppbmdraXJiaXIaCxIFU2VyaWUiDzIwOTkgQ29sbGVjdGlvbgw",
+      "modified": "2019-12-16T04:00:23.659268",
+      "title": "2099 Collection",
+      "version": 1548093040
+    },
+    {
+      "created": "2019-07-22T03:00:28.551831",
+      "id": "5",
+      "key": "ag5lfmFtYXppbmdraXJiaXIXCxIFU2VyaWUiDEFnZSBvZiBYLU1lbgw",
+      "modified": "2019-07-22T03:00:28.551836",
+      "title": "Age of X-Men",
+      "version": 1548093040
+    },
+    {
+      "created": "2019-01-05T00:49:47.741136",
+      "id": "6",
+      "key": "ag5lfmFtYXppbmdraXJiaXITCxIFU2VyaWUiCEF2ZW5nZXJzDA",
+      "modified": "2019-01-05T00:49:47.741142",
+      "title": "Avengers",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:47.243135",
+      "id": "7",
+      "key": "ag5lfmFtYXppbmdraXJiaXIaCxIFU2VyaWUiD0NhcGl0YW4gQW1lcmljYQw",
+      "modified": "2019-01-05T00:49:47.243142",
+      "title": "Capitan America",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-04-15T03:00:23.874988",
+      "id": "8",
+      "key": "ag5lfmFtYXppbmdraXJiaXIZCxIFU2VyaWUiDkNhcHRhaW4gTWFydmVsDA",
+      "modified": "2019-04-15T03:00:23.874994",
+      "title": "Captain Marvel",
+      "version": 1548093040
+    },
+    {
+      "created": "2019-01-05T00:50:00.202962",
+      "id": "9",
+      "key": "ag5lfmFtYXppbmdraXJiaXIUCxIFU2VyaWUiCUNoYW1waW9ucww",
+      "modified": "2019-01-05T00:50:00.202967",
+      "title": "Champions",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-02-04T04:00:24.264994",
+      "id": "10",
+      "key": "ag5lfmFtYXppbmdraXJiaXIbCxIFU2VyaWUiEENvbmFuIGlsIGJhcmJhcm8M",
+      "modified": "2019-02-04T04:00:24.265002",
+      "title": "Conan il barbaro",
+      "version": 1548093040
+    },
+    {
+      "created": "2019-01-05T00:49:49.604439",
+      "id": "11",
+      "key": "ag5lfmFtYXppbmdraXJiaXIfCxIFU2VyaWUiFERhcmVkZXZpbCBDb2xsZWN0aW9uDA",
+      "modified": "2019-01-05T00:49:49.604447",
+      "title": "Daredevil Collection",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:45.021532",
+      "id": "12",
+      "key": "ag5lfmFtYXppbmdraXJiaXITCxIFU2VyaWUiCERlYWRwb29sDA",
+      "modified": "2019-01-05T00:49:45.021541",
+      "title": "Deadpool",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:49.313743",
+      "id": "13",
+      "key": "ag5lfmFtYXppbmdraXJiaXIeCxIFU2VyaWUiE0RlYWRwb29sIENvbGxlY3Rpb24M",
+      "modified": "2019-01-05T00:49:49.313749",
+      "title": "Deadpool Collection",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:44.011521",
+      "id": "14",
+      "key": "ag5lfmFtYXppbmdraXJiaXIlCxIFU2VyaWUiGkRldmlsIGUgaSBDYXZhbGllcmkgTWFydmVsDA",
+      "modified": "2019-01-05T00:49:44.011530",
+      "title": "Devil e i Cavalieri Marvel",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:44.627235",
+      "id": "15",
+      "key": "ag5lfmFtYXppbmdraXJiaXIZCxIFU2VyaWUiDkRvY3RvciBTdHJhbmdlDA",
+      "modified": "2019-01-05T00:49:44.627243",
+      "title": "Doctor Strange",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-18T01:43:47.324797",
+      "id": "16",
+      "key": "ag5lfmFtYXppbmdraXJiaXInCxIFU2VyaWUiHEVyb2kgTWFydmVsIGluIEJpYW5jbyBlIE5lcm8M",
+      "modified": "2019-01-18T01:43:47.324803",
+      "title": "Eroi Marvel in Bianco e Nero",
+      "version": 1547775711
+    },
+    {
+      "created": "2019-01-05T00:49:46.998140",
+      "id": "17",
+      "key": "ag5lfmFtYXppbmdraXJiaXIdCxIFU2VyaWUiEkZhbnRhc3RpY2kgUXVhdHRybww",
+      "modified": "2019-01-05T00:49:46.998149",
+      "title": "Fantastici Quattro",
+      "version": 1546648883
+    },
+    {
+      "created": "2020-01-20T04:00:23.033968",
+      "id": "18",
+      "key": "ag5lfmFtYXppbmdraXJiaXIYCxIFU2VyaWUiDUZvciBGYW5zIE9ubHkM",
+      "modified": "2020-01-20T04:00:23.033974",
+      "title": "For Fans Only",
+      "version": 1548093040
+    },
+    {
+      "created": "2020-07-13T03:00:21.097487",
+      "id": "19",
+      "key": "ag5lfmFtYXppbmdraXJiaXIVCxIFU2VyaWUiCkdhbWVydmVyc2UM",
+      "modified": "2020-07-13T03:00:21.097492",
+      "title": "Gamerverse",
+      "version": 1548093040
+    },
+    {
+      "created": "2019-01-05T00:49:46.515431",
+      "id": "20",
+      "key": "ag5lfmFtYXppbmdraXJiaXIgCxIFU2VyaWUiFUdsaSBJbmNyZWRpYmlsaSBYLU1lbgw",
+      "modified": "2019-01-05T00:49:46.515439",
+      "title": "Gli Incredibili X-Men",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:53.035660",
+      "id": "21",
+      "key": "ag5lfmFtYXppbmdraXJiaXIfCxIFU2VyaWUiFEdyYW5kaSBFdmVudGkgTWFydmVsDA",
+      "modified": "2019-01-05T00:49:53.035665",
+      "title": "Grandi Eventi Marvel",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:41.703439",
+      "id": "22",
+      "key": "ag5lfmFtYXppbmdraXJiaXIfCxIFU2VyaWUiFEdyYW5kaSBUZXNvcmkgTWFydmVsDA",
+      "modified": "2019-01-05T00:49:41.703447",
+      "title": "Grandi Tesori Marvel",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:59.068715",
+      "id": "23",
+      "key": "ag5lfmFtYXppbmdraXJiaXIjCxIFU2VyaWUiGEd1YXJkaWFuaSBkZWxsYSBHYWxhc3NpYQw",
+      "modified": "2019-01-05T00:49:59.068722",
+      "title": "Guardiani della Galassia",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-18T01:43:53.047280",
+      "id": "24",
+      "key": "ag5lfmFtYXppbmdraXJiaXIsCxIFU2VyaWUiIUd1YXJkaWFuaSBkZWxsYSBHYWxhc3NpYSBQcmVzZW50YQw",
+      "modified": "2019-01-18T01:43:53.047285",
+      "title": "Guardiani della Galassia Presenta",
+      "version": 1547775711
+    },
+    {
+      "created": "2019-01-05T00:49:45.543611",
+      "id": "25",
+      "key": "ag5lfmFtYXppbmdraXJiaXIdCxIFU2VyaWUiEkh1bGsgZSBpIERpZmVuc29yaQw",
+      "modified": "2019-01-05T00:49:45.543618",
+      "title": "Hulk e i Difensori",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:46.671937",
+      "id": "26",
+      "key": "ag5lfmFtYXppbmdraXJiaXIdCxIFU2VyaWUiEkkgTnVvdmlzc2ltaSBYLU1lbgw",
+      "modified": "2019-01-05T00:49:46.671945",
+      "title": "I Nuovissimi X-Men",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:47.977707",
+      "id": "27",
+      "key": "ag5lfmFtYXppbmdraXJiaXITCxIFU2VyaWUiCElyb24gTWFuDA",
+      "modified": "2019-01-05T00:49:47.977713",
+      "title": "Iron Man",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-04-22T03:00:59.141120",
+      "id": "28",
+      "key": "ag5lfmFtYXppbmdraXJiaXImCxIFU2VyaWUiG0xhIFNwYWRhIFNlbHZhZ2dpYSBkaSBDb25hbgw",
+      "modified": "2019-04-22T03:00:59.141126",
+      "title": "La Spada Selvaggia di Conan",
+      "version": 1548093040
+    },
+    {
+      "created": "2020-01-20T04:00:21.029675",
+      "id": "29",
+      "key": "ag5lfmFtYXppbmdraXJiaXIdCxIFU2VyaWUiEk1hcnZlbCBCZXN0IFNlbGxlcgw",
+      "modified": "2020-01-20T04:00:21.029680",
+      "title": "Marvel Best Seller",
+      "version": 1548093040
+    },
+    {
+      "created": "2019-01-05T00:49:44.235710",
+      "id": "30",
+      "key": "ag5lfmFtYXppbmdraXJiaXIcCxIFU2VyaWUiEU1hcnZlbCBDb2xsZWN0aW9uDA",
+      "modified": "2019-01-05T00:49:44.235716",
+      "title": "Marvel Collection",
+      "version": 1546648883
+    },
+    {
+      "created": "2020-01-20T04:00:20.726233",
+      "id": "31",
+      "key": "ag5lfmFtYXppbmdraXJiaXIkCxIFU2VyaWUiGU1hcnZlbCBDb2xsZWN0aW9uIFNwZWNpYWwM",
+      "modified": "2020-01-20T04:00:20.726239",
+      "title": "Marvel Collection Special",
+      "version": 1548093040
+    },
+    {
+      "created": "2019-01-05T00:49:53.778251",
+      "id": "32",
+      "key": "ag5lfmFtYXppbmdraXJiaXIbCxIFU2VyaWUiEE1hcnZlbCBDcm9zc292ZXIM",
+      "modified": "2019-01-05T00:49:53.778256",
+      "title": "Marvel Crossover",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-11-25T04:00:20.707474",
+      "id": "33",
+      "key": "ag5lfmFtYXppbmdraXJiaXIYCxIFU2VyaWUiDU1hcnZlbCBEZWx1eGUM",
+      "modified": "2019-11-25T04:00:20.707479",
+      "title": "Marvel Deluxe",
+      "version": 1548093040
+    },
+    {
+      "created": "2019-11-25T04:00:21.269369",
+      "id": "34",
+      "key": "ag5lfmFtYXppbmdraXJiaXIXCxIFU2VyaWUiDE1hcnZlbCBHZWVrcww",
+      "modified": "2019-11-25T04:00:21.269376",
+      "title": "Marvel Geeks",
+      "version": 1548093040
+    },
+    {
+      "created": "2019-01-05T00:49:58.789049",
+      "id": "35",
+      "key": "ag5lfmFtYXppbmdraXJiaXIYCxIFU2VyaWUiDU1hcnZlbCBHaWFudHMM",
+      "modified": "2019-01-05T00:49:58.789054",
+      "title": "Marvel Giants",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:48.760374",
+      "id": "36",
+      "key": "ag5lfmFtYXppbmdraXJiaXIfCxIFU2VyaWUiFE1hcnZlbCBHcmVhdGVzdCBIaXRzDA",
+      "modified": "2019-01-05T00:49:48.760378",
+      "title": "Marvel Greatest Hits",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:49.128230",
+      "id": "37",
+      "key": "ag5lfmFtYXppbmdraXJiaXIZCxIFU2VyaWUiDk1hcnZlbCBIaXN0b3J5DA",
+      "modified": "2019-01-05T00:49:49.128237",
+      "title": "Marvel History",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-18T01:43:49.537558",
+      "id": "38",
+      "key": "ag5lfmFtYXppbmdraXJiaXIWCxIFU2VyaWUiC01hcnZlbCBJY29uDA",
+      "modified": "2019-01-18T01:43:49.537566",
+      "title": "Marvel Icon",
+      "version": 1547775711
+    },
+    {
+      "created": "2019-01-28T04:00:22.562807",
+      "id": "39",
+      "key": "ag5lfmFtYXppbmdraXJiaXIlCxIFU2VyaWUiGk1hcnZlbCBJbnRlZ3JhbGUgRGFyZWRldmlsDA",
+      "modified": "2019-01-28T04:00:22.562814",
+      "title": "Marvel Integrale Daredevil",
+      "version": 1548093040
+    },
+    {
+      "created": "2019-01-18T01:43:29.430523",
+      "id": "40",
+      "key": "ag5lfmFtYXppbmdraXJiaXIhCxIFU2VyaWUiFk1hcnZlbCBJbnRlZ3JhbGUgWC1NZW4M",
+      "modified": "2019-01-18T01:43:29.430528",
+      "title": "Marvel Integrale X-Men",
+      "version": 1547775711
+    },
+    {
+      "created": "2019-01-05T00:49:46.321218",
+      "id": "41",
+      "key": "ag5lfmFtYXppbmdraXJiaXIZCxIFU2VyaWUiDk1hcnZlbCBMZWdlbmRzDA",
+      "modified": "2019-01-05T00:49:46.321223",
+      "title": "Marvel Legends",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:41.420976",
+      "id": "42",
+      "key": "ag5lfmFtYXppbmdraXJiaXIdCxIFU2VyaWUiEk1hcnZlbCBNYXN0ZXJ3b3Jrcww",
+      "modified": "2019-01-05T00:49:41.420982",
+      "title": "Marvel Masterworks",
+      "version": 1546648883
+    },
+    {
+      "created": "2020-01-20T04:00:23.433854",
+      "id": "43",
+      "key": "ag5lfmFtYXppbmdraXJiaXIWCxIFU2VyaWUiC01hcnZlbCBNZWdhDA",
+      "modified": "2020-01-20T04:00:23.433859",
+      "title": "Marvel Mega",
+      "version": 1548093040
+    },
+    {
+      "created": "2019-01-05T00:49:45.716981",
+      "id": "44",
+      "key": "ag5lfmFtYXppbmdraXJiaXIbCxIFU2VyaWUiEE1hcnZlbCBNaW5pc2VyaWUM",
+      "modified": "2019-01-05T00:49:45.716987",
+      "title": "Marvel Miniserie",
+      "version": 1546648883
+    },
+    {
+      "created": "2020-01-20T04:00:22.419913",
+      "id": "45",
+      "key": "ag5lfmFtYXppbmdraXJiaXIVCxIFU2VyaWUiCk1hcnZlbCBNaXgM",
+      "modified": "2020-01-20T04:00:22.419919",
+      "title": "Marvel Mix",
+      "version": 1548093040
+    },
+    {
+      "created": "2020-04-13T03:00:21.735079",
+      "id": "46",
+      "key": "ag5lfmFtYXppbmdraXJiaXIbCxIFU2VyaWUiEE1hcnZlbCBNdXN0IEhhdmUM",
+      "modified": "2020-04-13T03:00:21.735084",
+      "title": "Marvel Must Have",
+      "version": 1548093040
+    },
+    {
+      "created": "2019-01-05T00:49:41.936973",
+      "id": "47",
+      "key": "ag5lfmFtYXppbmdraXJiaXIZCxIFU2VyaWUiDk1hcnZlbCBPbW5pYnVzDA",
+      "modified": "2019-01-05T00:49:41.936978",
+      "title": "Marvel Omnibus",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-18T01:43:50.656555",
+      "id": "48",
+      "key": "ag5lfmFtYXppbmdraXJiaXIoCxIFU2VyaWUiHU1hcnZlbCBPcmlnaW5hbCBHcmFwaGljIE5vdmVsDA",
+      "modified": "2019-01-18T01:43:50.656559",
+      "title": "Marvel Original Graphic Novel",
+      "version": 1547775711
+    },
+    {
+      "created": "2019-01-05T00:49:55.100924",
+      "id": "49",
+      "key": "ag5lfmFtYXppbmdraXJiaXIaCxIFU2VyaWUiD01hcnZlbCBQbGF5bGlzdAw",
+      "modified": "2019-01-05T00:49:55.100930",
+      "title": "Marvel Playlist",
+      "version": 1546648883
+    },
+    {
+      "created": "2019-01-05T00:49:43.804836",
+      "id": "50",
+      "key": "ag5lfmFtYXppbmdraXJiaXIUCxIFU2VyaWUiCVdvbHZlcmluZQw",
+      "modified": "2019-01-05T00:49:43.804842",
+      "title": "Wolverine",
+      "version": 1546648883
+    }
+  ]
+}

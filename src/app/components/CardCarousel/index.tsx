@@ -1,7 +1,6 @@
 import React from 'react';
 import Flickity from 'react-flickity-component';
 import MyCard, { CardData } from '../Card';
-import { Jumbotron } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const flickityOptions = {

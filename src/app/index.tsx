@@ -22,7 +22,7 @@ export function App() {
   return (
     <>
       <MyNavBar />
-      <br />{' '}
+      <br />
       <BrowserRouter>
         <Helmet
           titleTemplate="%s - React Boilerplate"
