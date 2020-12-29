@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const flickityOptions = {
   // initialIndex: 2,
-  cellAlign: 'left',
+  cellAlign: 'center',
   freeScroll: true,
   contain: true,
   pageDots: false,

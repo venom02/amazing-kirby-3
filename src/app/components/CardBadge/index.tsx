@@ -37,7 +37,7 @@ const MyStyle = styled.div<CardBadgePprops>`
     border-radius: 30px 30px 30px 30px;
     color: #232323;
     padding: 5px 10px;
-    font-size: ${({ thumb }) => (thumb ? '10px' : '15px')};
+    font-size: ${({ thumb }) => (thumb ? '13px' : '15px')};
   }
 
   .got-badge {
@@ -49,7 +49,7 @@ const MyStyle = styled.div<CardBadgePprops>`
     border-radius: 30px 30px 30px 30px;
     color: #ffffff;
     padding: 5px 10px;
-    font-size: ${({ thumb }) => (thumb ? '10px' : '15px')};
+    font-size: ${({ thumb }) => (thumb ? '13px' : '15px')};
   }
 `;
 
