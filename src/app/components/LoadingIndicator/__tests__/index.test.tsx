@@ -2,17 +2,17 @@ import * as React from 'react';
 import { render } from '@testing-library/react';
 
 import { LoadingIndicator } from '../index';
-import { themes } from 'styles/theme/themes';
-import { DefaultTheme, ThemeProvider } from 'styled-components';
+// import { themes } from 'styles/theme/themes';
+import { DefaultTheme } from 'styled-components';
 
 const renderWithTheme = (
   props: Parameters<typeof LoadingIndicator>[number] = {},
   theme?: DefaultTheme,
 ) =>
   render(
-    <ThemeProvider theme={theme || themes.light}>
-      <LoadingIndicator {...props} />
-    </ThemeProvider>,
+    // <ThemeProvider theme={theme || themes.light}>
+    <LoadingIndicator {...props} />,
+    // </ThemeProvider>,
   );
 
 describe('<LoadingIndicator />', () => {
@@ -26,10 +26,10 @@ describe('<LoadingIndicator />', () => {
     expect(loadingIndicator.container.firstChild).toMatchSnapshot();
   });
 
-  it('should have theme', () => {
-    const loadingIndicator = renderWithTheme();
-    expect(loadingIndicator.container.querySelector('circle')).toHaveStyle(
-      `stroke: ${themes.light.primary}`,
-    );
-  });
+  // it('should have theme', () => {
+  //   const loadingIndicator = renderWithTheme();
+  //   expect(loadingIndicator.container.querySelector('circle')).toHaveStyle(
+  //     `stroke: ${themes.light.primary}`,
+  //   );
+  // });
 });
