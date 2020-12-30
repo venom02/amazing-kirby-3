@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faThumbtack } from '@fortawesome/free-solid-svg-icons';
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 export enum BadgeStates {
@@ -10,7 +10,7 @@ export enum BadgeStates {
 }
 
 interface CardBadgeProps {
-  thumb: boolean;
+  thumb?: boolean;
   stateProp: BadgeStates;
 }
 
@@ -21,7 +21,7 @@ interface MyStyleProps {
 const CardBadge: React.FC<CardBadgeProps> = ({
   children,
   stateProp,
-  thumb,
+  thumb = false,
 }) => {
   // const [state, setState] = useState<BadgeStates>();
   let badge;
