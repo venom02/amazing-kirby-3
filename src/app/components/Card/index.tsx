@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
 import Flippy, { BackSide, FrontSide } from 'react-flippy';
-import CardBadge from '../CardBadge';
+import CardBadge, { BadgeStates } from '../CardBadge';
+import { faBan, faCheck, faThumbtack } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Simulate } from 'react-dom/test-utils';
 
 export type CardData = {
+  id: string;
   title?: string;
   date?: string;
   img: string;
@@ -17,14 +21,21 @@ type CardProps = {
 };
 
 export const MyCard: React.FC<CardProps> = ({ card, thumb = false }) => {
+  const [badge, setBadge] = useState<BadgeStates>(BadgeStates.DEL);
+
+  useEffect(() => {
+    return () => {};
+  });
+
   const cardFront = (
-    <CardBadge thumb={thumb}>
+    <CardBadge thumb={thumb} stateProp={badge}>
       <img
         style={{
           height: thumb ? '200px' : '450px',
           width: 'auto',
         }}
         src={thumb && card.thumb ? card.thumb : card.img}
+        alt={card.title}
       />
     </CardBadge>
   );
@@ -49,11 +60,35 @@ export const MyCard: React.FC<CardProps> = ({ card, thumb = false }) => {
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </Card.Text>
-            <Card.Link href="#">Card Link</Card.Link>
-            <Card.Link href="#">Another Link</Card.Link>
           </>
         )}
       </Card.Body>
+      <Card.Footer className="text-center">
+        <button
+          className="btn btn-theme float-left"
+          type="button"
+          onClick={() => setBadge(BadgeStates.DEL)}
+        >
+          {thumb ? <div /> : <>Del </>}
+          <FontAwesomeIcon icon={faBan} />
+        </button>
+        <button
+          className="btn btn-theme "
+          type="button"
+          onClick={() => setBadge(BadgeStates.PIN)}
+        >
+          {thumb ? <div /> : <>Pin </>}
+          <FontAwesomeIcon icon={faThumbtack} />
+        </button>
+        <button
+          className="btn btn-theme float-right"
+          type="button"
+          onClick={() => setBadge(BadgeStates.GOT)}
+        >
+          {thumb ? <div /> : <>Got </>}
+          <FontAwesomeIcon icon={faCheck} />
+        </button>
+      </Card.Footer>
     </Card>
   );
 

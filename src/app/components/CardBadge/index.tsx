@@ -1,27 +1,61 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faThumbtack } from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
-interface CardBadgePprops {
+export enum BadgeStates {
+  DEL,
+  PIN,
+  GOT,
+}
+
+interface CardBadgeProps {
+  thumb: boolean;
+  stateProp: BadgeStates;
+}
+
+interface MyStyleProps {
   thumb: boolean;
 }
 
-const CardBadge: React.FC<CardBadgePprops> = props => (
-  <MyStyle thumb={props.thumb}>
-    <div className="item">
-      <span className="pin-badge">
-        <FontAwesomeIcon icon={faThumbtack} />
-      </span>
-      <span className="got-badge">
-        <FontAwesomeIcon icon={faCheck} />
-      </span>
-      {props.children}
-    </div>
-  </MyStyle>
-);
+const CardBadge: React.FC<CardBadgeProps> = ({
+  children,
+  stateProp,
+  thumb,
+}) => {
+  // const [state, setState] = useState<BadgeStates>();
+  let badge;
+  switch (stateProp) {
+    case BadgeStates.DEL:
+      badge = <React.Fragment />;
+      break;
+    case BadgeStates.PIN:
+      badge = (
+        <span className="pin-badge">
+          <FontAwesomeIcon icon={faThumbtack} />
+        </span>
+      );
+      break;
+    case BadgeStates.GOT:
+      badge = (
+        <span className="got-badge">
+          <FontAwesomeIcon icon={faCheck} />
+        </span>
+      );
+      break;
+  }
 
-const MyStyle = styled.div<CardBadgePprops>`
+  return (
+    <MyStyle thumb={thumb}>
+      <div className="item">
+        {badge}
+        {children}
+      </div>
+    </MyStyle>
+  );
+};
+
+const MyStyle = styled.div<MyStyleProps>`
   .item {
     position: relative;
     //padding-top: 20px;
@@ -42,7 +76,7 @@ const MyStyle = styled.div<CardBadgePprops>`
 
   .got-badge {
     position: absolute;
-    right: ${({ thumb }) => (thumb ? '35px' : '45px')};
+    right: ${({ thumb }) => (thumb ? '5px' : '10px')};
     bottom: ${({ thumb }) => (thumb ? '5px' : '10px')};
     background: #28a745 !important;
     text-align: center;

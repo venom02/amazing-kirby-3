@@ -5,9 +5,17 @@ import { Col, Container, Jumbotron, Row } from 'react-bootstrap';
 import CardCarousel from '../../components/CardCarousel';
 import { CardData } from '../../components/Card';
 import axios from 'axios';
-import { MyNavBar } from '../../components/MyNavBar';
 
-const series: string[] = ['Wolverine', 'Iron Man', 'Spider Man'];
+interface serie {
+  title: string;
+  id: number;
+}
+
+const series: serie[] = [
+  { title: 'Wolverine', id: 1 },
+  { title: 'Iron Man', id: 2 },
+  { title: 'Spider Man', id: 3 },
+];
 
 export function HomePage() {
   const [cardStack, setCardStack] = useState<CardData[]>([]);
@@ -62,19 +70,19 @@ export function HomePage() {
         </Row>
         <h3>Uscite per Serie</h3>
         <Jumbotron>
-          {series.map(title => (
-            <>
+          {series.map(serie => (
+            <React.Fragment key={'carousel' + serie.id}>
               <Row>
                 <Col>
                   <CardCarousel
-                    title={title}
+                    title={serie.title}
                     cards={cardStack}
                     isThumbs={true}
                   />
                 </Col>
               </Row>
               <br />
-            </>
+            </React.Fragment>
           ))}
         </Jumbotron>
       </Container>

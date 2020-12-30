@@ -38,7 +38,7 @@ export const CardCarousel: React.FC<CardCarouselProps> = ({
         static={isStatic} // default false
       >
         {cards.map(card => (
-          <MyCard card={card} thumb={isThumbs} />
+          <MyCard key={card.id} card={card} thumb={isThumbs} />
         ))}
       </Flickity>
       {/*</Jumbotron>*/}
