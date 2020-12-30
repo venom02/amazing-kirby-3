@@ -38,74 +38,78 @@ export const MyCard: React.FC<CardProps> = ({ card, thumb = false }) => {
     </CardBadge>
   );
 
-  interface FooterButtons {
-    badgeState: BadgeStates;
-    title: string;
-    icon: IconDefinition;
-  }
+  const CardBack: React.FC<CardProps> = ({ card, thumb = false }) => {
+    interface FooterButtons {
+      badgeState: BadgeStates;
+      title: string;
+      icon: IconDefinition;
+    }
 
-  const footerButtons: FooterButtons[] = [
-    {
-      badgeState: BadgeStates.DEL,
-      title: 'Del',
-      icon: faBan,
-    },
-    {
-      badgeState: BadgeStates.PIN,
-      title: 'Pin',
-      icon: faThumbtack,
-    },
-    {
-      badgeState: BadgeStates.GOT,
-      title: 'Got',
-      icon: faCheck,
-    },
-  ];
+    const footerButtons: FooterButtons[] = [
+      {
+        badgeState: BadgeStates.DEL,
+        title: 'Del',
+        icon: faBan,
+      },
+      {
+        badgeState: BadgeStates.PIN,
+        title: 'Pin',
+        icon: faThumbtack,
+      },
+      {
+        badgeState: BadgeStates.GOT,
+        title: 'Got',
+        icon: faCheck,
+      },
+    ];
 
-  const CardBack: React.FC<CardProps> = ({ card, thumb = false }) => (
-    <Card
-      style={{
-        height: height,
-        width: width,
-      }}
-    >
-      <Card.Body>
-        <Card.Title>
-          {!thumb ? <h3>{card.title} </h3> : <h6>{card.title}</h6>}
-        </Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">{card.date}</Card.Subtitle>
-        {!thumb ? (
-          <>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-          </>
-        ) : (
-          <div />
-        )}
-      </Card.Body>
-      <Card.Footer>
-        <Row noGutters={true}>
-          {footerButtons.map(button => (
-            <Col>
-              <button
-                className="btn btn-theme"
-                type="button"
-                onClick={() => setBadge(button.badgeState)}
-              >
-                {!thumb ? <>{button.title}</> : <div />}
-                <FontAwesomeIcon
-                  icon={button.icon}
-                  size={!thumb ? '1x' : 'xs'}
-                />
-              </button>
-            </Col>
-          ))}
-        </Row>
-      </Card.Footer>
-    </Card>
-  );
+    return (
+      <Card
+        style={{
+          height: height,
+          width: width,
+        }}
+      >
+        <Card.Body>
+          <Card.Title>
+            {!thumb ? <h3>{card.title} </h3> : <h6>{card.title}</h6>}
+          </Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">{card.date}</Card.Subtitle>
+          {!thumb ? (
+            <>
+              <Card.Text>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </Card.Text>
+            </>
+          ) : (
+            <div />
+          )}
+        </Card.Body>
+        <Card.Footer>
+          <Row noGutters={true}>
+            {footerButtons.map(button => (
+              <React.Fragment key={button.badgeState}>
+                <Col>
+                  <button
+                    className="btn btn-theme"
+                    type="button"
+                    onClick={() => setBadge(button.badgeState)}
+                  >
+                    {!thumb ? <>{button.title}</> : <div />}
+                    <FontAwesomeIcon
+                      icon={button.icon}
+                      size={!thumb ? '1x' : 'xs'}
+                    />
+                  </button>
+                </Col>
+              </React.Fragment>
+            ))}
+          </Row>
+        </Card.Footer>
+      </Card>
+    );
+  };
 
   const flippyStyle = {
     padding: '0em',

@@ -12,14 +12,11 @@ import { GlobalStyle } from 'styles/global-styles';
 import { HomePage } from './containers/HomePage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
-import { MyNavBar } from './components/MyNavBar';
 
 export function App() {
   const { i18n } = useTranslation();
   return (
     <>
-      <MyNavBar />
-      <br />
       <BrowserRouter>
         <Helmet
           titleTemplate="%s - React Boilerplate"

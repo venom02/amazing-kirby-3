@@ -1,10 +1,13 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Col, Container, Jumbotron, Row } from 'react-bootstrap';
+import { Alert, Col, Container, Jumbotron, Row } from 'react-bootstrap';
 import CardCarousel from '../../components/CardCarousel';
 import { CardData } from '../../components/Card';
 import axios from 'axios';
+import { MyNavBar } from '../../components/MyNavBar';
+import { LoadingIndicator } from '../../components/LoadingIndicator';
+import styled from 'styled-components/macro';
 
 interface serie {
   title: string;
@@ -17,8 +20,21 @@ const series: serie[] = [
   { title: 'Spider Man', id: 3 },
 ];
 
+const LoadingWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export function HomePage() {
   const [cardStack, setCardStack] = useState<CardData[]>([]);
+  const [error, setError]: [string, (error: string) => void] = React.useState(
+    '',
+  );
+  const [loading, setLoading]: [
+    boolean,
+    (loading: boolean) => void,
+  ] = React.useState<boolean>(true);
 
   useEffect(() => {
     axios
@@ -30,6 +46,7 @@ export function HomePage() {
       })
       .then(response => {
         setCardStack(response.data);
+        setLoading(false);
       })
       .catch(ex => {
         const err = axios.isCancel(ex)
@@ -39,6 +56,8 @@ export function HomePage() {
           : ex.response.status === 404
           ? 'Resource not found'
           : 'An unexpected error has occurred';
+        setError(err);
+        setLoading(false);
       });
   }, []);
 
@@ -48,9 +67,17 @@ export function HomePage() {
         <title>Home Page</title>
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
+      <MyNavBar />
+      <br />
+      {error && <Alert variant={'danger'}>{error}</Alert>}
       <Container fluid>
         <Row>
           <Col>
+            {loading && (
+              <LoadingWrapper>
+                <LoadingIndicator />
+              </LoadingWrapper>
+            )}
             <CardCarousel
               title="Uscite della settimana"
               cards={cardStack}
@@ -64,6 +91,11 @@ export function HomePage() {
         <Row>
           <Col>
             <Jumbotron>
+              {loading && (
+                <LoadingWrapper>
+                  <LoadingIndicator />
+                </LoadingWrapper>
+              )}
               <CardCarousel title="Le mie uscite" cards={cardStack} />
             </Jumbotron>
           </Col>
@@ -74,6 +106,11 @@ export function HomePage() {
             <React.Fragment key={'carousel' + serie.id}>
               <Row>
                 <Col>
+                  {loading && (
+                    <LoadingWrapper>
+                      <LoadingIndicator />
+                    </LoadingWrapper>
+                  )}
                   <CardCarousel
                     title={serie.title}
                     cards={cardStack}
